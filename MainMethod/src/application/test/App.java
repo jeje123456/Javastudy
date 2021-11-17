@@ -3,11 +3,11 @@ package application.test;
 public class App {
 
 	public static void main(String[] args) {
-		// Ctrl + Alt + ¾Æ·¡·Î = ¾Æ·§ÁÙ¿¡ º¹»ç
-		// Tab ¹İ´ë = Shift + Tab
-		System.out.println("¾È³çÇÏ¼¼¿ä");
-		System.out.println("»õ ÀÚ¹Ù ÇÁ·Î±×·¥À»");
-		System.out.println("½ÇÇàÇÕ´Ï´Ù.");
+		// Ctrl + Alt + ì•„ë˜ë¡œ = ì•„ë«ì¤„ì— ë³µì‚¬
+		// Tab ë°˜ëŒ€ = Shift + Tab
+		System.out.println("ì•ˆë…•í•˜ì„¸ìš”");
+		System.out.println("ìƒˆ ìë°” í”„ë¡œê·¸ë¨ì„");
+		System.out.println("ì‹¤í–‰í•©ë‹ˆë‹¤.");
 
 	}
 
