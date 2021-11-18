@@ -3,6 +3,8 @@ package application;
 import java.util.Scanner; // java.util 패키지 안에 Scanner 클래스를 불러와서 사용가능
 //Scanner 클래스
 //: 읽은 바이크를 문자, 정수, 실수, 불린 문자열 등 다양한 타입으로 변환하여 리턴하는 클래스
+//Scanner는 입력되는 키 값을 공백으로 구분되는 토큰 단위로 읽는다
+
 
 public class UserInput {
 
@@ -10,6 +12,7 @@ public class UserInput {
 		// 입력받는 클래스 UserInput만들기
 		// Scanner + ctrl + spacebar
 		Scanner scanner = new Scanner(System.in); //스캐너 객체를 선언
+		// System.in : 자바의 표준 입력 스트림으로 입력되는 키를 바이트로 리턴하는 스트림이다.
 		
 		System.out.print("온돌를 입력해 주세요 : ");
 		double c = scanner.nextDouble(); //스캐너로 정수를 입력받아서 x에 입력
