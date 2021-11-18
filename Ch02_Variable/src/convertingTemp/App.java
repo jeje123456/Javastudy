@@ -1,0 +1,15 @@
+package convertingTemp;
+
+public class App {
+
+	public static void main(String[] args) {
+		// 섭씨 온도를 화씨로 변환 (0°C × 9 / 5) + 32 = 32°F 
+		
+		double c = 17.0; // 섭씨 변수 c 의 초기값은 25
+		double f = (c * 9 / 5) + 32; // 화씨 변수 f는 공식대로
+		
+		System.out.println("섭씨 " + c + "는 화씨 " + f + "이다.");
+
+	}
+
+}
