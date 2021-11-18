@@ -10,7 +10,7 @@ public class UserInput {
 
 	public static void main(String[] args) {
 		// 입력받는 클래스 UserInput만들기
-		// Scanner + ctrl + spacebar
+		// Scanner 입력 후 ctrl + spacebar
 		Scanner scanner = new Scanner(System.in); //스캐너 객체를 선언
 		// System.in : 자바의 표준 입력 스트림으로 입력되는 키를 바이트로 리턴하는 스트림이다.
 		
