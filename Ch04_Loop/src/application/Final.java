@@ -7,7 +7,7 @@ public class Final {
 		final int VALUE = 9; //상수는 대문자로 //변하지 않는 정수가 됨 
 		// VALUE = 11; 상수는 새로운 값을 대입할 수 없다.
 		final String USER_PASSWORD = "abc";
-		// USERPASSWORD = "ABC"; 안됨
+		// USER_PASSWORD = "ABC"; 안됨
 		
 		System.out.println(VALUE);
 		System.out.println(USER_PASSWORD);		
