@@ -14,7 +14,7 @@ public class Ex1 {
 		System.out.print("3. 프로그램 종료\n\n");
 		System.out.print("옵션을 선택 > ");
 		int option = scanner.nextInt();
-		
+		/*
 		if (option == 1) {
 			System.out.println("헬로우");
 		}
@@ -30,7 +30,25 @@ public class Ex1 {
 		else {
 			System.out.println("잘못된 옵션입니다.");
 		}
-		
+		*/
+		// switch case문으로 수정
+		switch(option) {
+		case 1:
+			System.out.println("헬로우");
+			break;
+		case 2:
+			System.out.println("안녕 ?");
+			break;
+		case 3:
+			System.out.println("종료합니다...");
+			break;
+		case 10000:
+			System.out.println("이스터에그를 발견했습니다!");
+			break;
+		default:
+			System.out.println("잘못된 옵션입니다.");
+			break;
+		}
 	}
 
 }
