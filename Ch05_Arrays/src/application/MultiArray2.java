@@ -11,7 +11,7 @@ public class MultiArray2 {
 		};
 		
 		for (int i=0; i<texts.length; i++) {
-			
+			System.out.printf("%d번째 배열 :", i);
 			for(int j=0; j<texts[i].length; j++) {
 				System.out.printf("[%d][%d]의 값 = %s   ", i, j, texts[i][j]);
 			}

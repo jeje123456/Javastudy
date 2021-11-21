@@ -11,7 +11,7 @@ public class MultiArray {
 		};
 		
 		for (int i=0; i<texts.length; i++) {
-//			System.out.printf("%d번쨰 배열 : %s\n", i, texts[i]);
+			System.out.printf("%d번째 배열 :", i);
 			String[] inArray = texts[i];
 			
 			for(int j=0; j<inArray.length; j++) {

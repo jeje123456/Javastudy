@@ -9,6 +9,12 @@ public class StringArray {
 		for (int i=0; i<4; i++) {
 			System.out.printf("인덱스번호 %d의 값은 %s이다.\n", i, animals[i]);
 		}
+		
+		animals[0] = "삵";
+		
+		for (int i=0; i<4; i++) {
+			System.out.printf("인덱스번호 %d의 값은 %s이다.\n", i, animals[i]);
+		}
 	}
 
 }
