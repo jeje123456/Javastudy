@@ -12,14 +12,12 @@ public class Window {
 	private int left;
 	
 	//private니까 get, set 메소드 만들기
-	// get
 	public void setWidth(int width) {
 		this.width = width;
 	}
 	public int getWidth() {
 		return width;
 	}
-	
 	public void setHeight(int height) {
 		this.height = height;
 	}
@@ -32,19 +30,16 @@ public class Window {
 	public boolean getIsVisible() {
 		return isVisible;
 	}
-	
 	public void setTop(int top) {
 		this.top = top;
 	}
 	public int getTop() {
 		return top;
 	}
-	
 	public void setLeft(int left) {
 		this.left = left;
 	}
 	public int getLeft() {
 		return left;
 	}
-	
 }
