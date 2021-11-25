@@ -45,9 +45,7 @@ public class Hangman {
 			}
 		}
 		else {
-			remainTries--;
 			System.out.println("틀렸습니다.");
-			System.out.println("남은 시도횟수 : " + remainTries);
 			if (remainTries == 0) {
 				System.out.println("Game Over!");
 				running = false;
