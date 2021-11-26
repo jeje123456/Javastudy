@@ -3,7 +3,6 @@ package application;
 import java.util.Random;
 
 public class RandomWord {
-	private int remainTries = 20;
 	// 스페이스바로 띄워진 단어들을 문자열로 str에 저장
 	private String str = "contractprocedure initiative competition suggestion instanceinstruction opportunity restaurant medicineboyfriend footballemployernegotiation personality significance engineering bathroommanufacturer proposalconstruction assistant agreement contribution requirement satisfaction reception preference solutioncigarette information improvement databasedisasterstrangerefficiency investment platformknowledge assumption government operation appearance argumentrevolution presencesympathydeliveryequipment candidate";
 	// 문자열을 스페이스바를 기준으로 잘라서 배열로 입력
@@ -38,15 +37,14 @@ public class RandomWord {
 	public boolean addGuess(char c) {
 		for(int i=0; i <selectWord.length(); i++) {
 			if (c == selectWord.charAt(i)) {
-				characters[i] = c;
-				System.out.println("남은 시도횟수 : " + remainTries);
-			}
-			else {
+				for(int j=0; j <selectWord.length(); j++) {
+					if (c == selectWord.charAt(j)) {
+						characters[j] = c;
+					}
+				}
 				return true;
 			}
 		}
-		remainTries--;
-		System.out.println("남은 시도횟수 : " + remainTries);
 		return false; // 맞는 문자가 없음
 	}
 	
