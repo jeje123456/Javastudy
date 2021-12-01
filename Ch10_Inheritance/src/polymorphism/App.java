@@ -32,6 +32,7 @@ public class App {
 			cats[i].hunt();
 		}
 		System.out.println("-----------");
+		
 		//foreach 반복문
 		for (Cat c : cats) {
 			c.vocal();

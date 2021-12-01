@@ -15,10 +15,10 @@ public class App {
 		HouseCat cat2 = (HouseCat)cat1;
 		cat2.call(); //cat1.call();로하면 안됨
 		// 다운캐스팅해도 객체는 1개!!
-//		HouseCat cat2 = (HouseCat)cat1;
-//		cat2.call(); 뭐를 Cat으로 바꿨는데 기억안남
+		HouseCat cat3 = (HouseCat)cat1;
+		cat3.call(); //뭐를 Cat으로 바꿨는데 기억안남
 		// 컴파일러가 에러 표시를 해주지 않기 때문에 실행하면 실시간 에러 발생
-		
+
 	}
 
 };

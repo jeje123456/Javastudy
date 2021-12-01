@@ -7,7 +7,7 @@ public class App {
 		// Static = 상수 = 클래스 변수 (인스턴스변수 X)
 		System.out.println(Cat.FOOD);
 		//System.out.println(Math.); 하면 엄청 뭐가 많이 뜸
-		System.out.println(Math.PI);
+		System.out.println(Math.PI);	
 		
 		System.out.println(Cat.count);
 		//System.out.println(Cat.name); // 객체 생성해야 사용가능

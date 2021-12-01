@@ -3,16 +3,14 @@ package application;
 public class Cat {
 	//변수
 	private String name; // cat의 객체를 사용해야 쑬 수 있는 변수
-	
 	private int id; //아이디 (고유번호 = 중복안됨)
-	
-	// final(상수) 사용하면 변수명을 대문자로
-	public static final String FOOD = "고양이사료";
 	
 	// 스테틱 변수는 객체들에 공유됨
 	public static int count=0;
 	//private static int count=0;
-	
+	// final(상수) 사용하면 변수명을 대문자로
+	public static final String FOOD = "고양이사료";	
+
 	public Cat(String name) {
 		this.name = name;
 		count++;

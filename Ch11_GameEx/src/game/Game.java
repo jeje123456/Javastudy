@@ -18,7 +18,7 @@ public class Game {
 	
 	public void run() {
 //		System.out.println("게임 시작...");
-//		 for(GameObject ob : objects) { (테스트용)
+//		 for(GameObject ob : objects) { //(테스트용)
 //			 System.out.println(ob.toString());
 //		 }
 		System.out.println("삼세판 게임 시작...");
