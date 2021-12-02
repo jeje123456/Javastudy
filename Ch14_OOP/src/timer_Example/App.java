@@ -6,7 +6,7 @@ import java.util.TimerTask;
 class Task extends TimerTask{
 	@Override
 	public void run() {
-		System.out.println("헬로우");
+		System.out.println("타이머1 헬로우");
 	}
 }
 
