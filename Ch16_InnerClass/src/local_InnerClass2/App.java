@@ -30,7 +30,14 @@ public class App {
 //		new Printer().print(); //실행문
 		//Schedul+c+s //Executors.+c+s //service.+c+s
 		ScheduledExecutorService service = Executors.newScheduledThreadPool(1);
-		service.scheduleAtFixedRate(new Printer(), 0L, 1L, TimeUnit.SECONDS);	
+//		service.scheduleAtFixedRate(new Printer(), 0L, 1L, TimeUnit.SECONDS);
+		
+		//anonymous패키지 - 익명클래스를 이용하여 실행가능
+		service.scheduleAtFixedRate(new Runnable() {
+			public void run() {
+				System.out.println(name);
+			}
+		}, 0L, 1L, TimeUnit.SECONDS);
 	}
 	
 	public static void main(String[] args) {
