@@ -1,6 +1,5 @@
 package enum_methods;
 
-import enum_Constructor.Fruit;
 
 public class App {
 
@@ -28,7 +27,7 @@ public class App {
 //		valueOf("문자열")
 		Fruit f1 = Fruit.valueOf("ORANGE");
 		System.out.println(f1);
-		System.out.println(f1 = Fruit.ORANGE);
+		System.out.println(f1 == Fruit.ORANGE);
 //		이 오렌지가 그 오렌지냐? true
 	
 	}

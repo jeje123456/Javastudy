@@ -8,5 +8,4 @@ public class Person implements Describable{
 	public String getDescription() {
 		return "사람입니다.";
 	}
-
 }

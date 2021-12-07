@@ -6,6 +6,4 @@ public class Computer implements Describable {
 	public String getDescription() {
 		return "컴퓨터입니다.";
 	}
-
-	
 }

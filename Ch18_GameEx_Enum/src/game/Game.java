@@ -2,6 +2,7 @@ package game;
 
 import java.util.Random;
 import java.util.Scanner;
+
 import game.objects.GameObject;
 
 public class Game {
@@ -10,10 +11,7 @@ public class Game {
 	Random random = new Random();
 	Scanner scanner = new Scanner(System.in);
 	
-
-	
 	public void run() {
-
 		System.out.println("삼세판 게임 시작...");
 		int wins = 0;
 		
@@ -27,7 +25,7 @@ public class Game {
 			System.out.println("당신의 선택은 : " + ob1);//상수값이 리턴됨
 			System.out.println("컴퓨터의 선택은 : " + ob2);
 
-			int result = ob1.compareTo(ob2);
+			int result = ob1.compare(ob2);
 			wins += result;
 			if(result>0) {
 				System.out.println("당신의 승리!🚀");

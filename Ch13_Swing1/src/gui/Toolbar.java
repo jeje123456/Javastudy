@@ -2,8 +2,9 @@ package gui;
 
 import javax.swing.JButton;
 import javax.swing.JToolBar;
-//JTool + ctrl + space
+
 public class Toolbar extends JToolBar {
+	// warning에서 default serial version ID 생성
 	private static final long serialVersionUID = 1L;
 
 	public Toolbar() {

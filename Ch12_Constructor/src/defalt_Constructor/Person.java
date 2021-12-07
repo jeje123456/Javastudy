@@ -1,15 +1,30 @@
 package defalt_Constructor;
 
 public class Person {
+
 /*	public Person() {
 		// 생성자는 클래스 이름과 같고 리턴 타입이 없음
 		System.out.println("새 person이 생성됨");
 	}
 	
+	@Override
 	public String toString() {
 		return "헬로우";
 	}
 */	
+/*	private String name;
+	
+	public Person(String name) {
+		// 생성자는 클래스 이름과 같고 리턴 타입이 없음
+		System.out.println("새 person이 생성됨");
+		this.name = name;
+	}
+
+	@Override
+	public String toString() {
+		return name;
+	}
+*/
 	private String name;
 	private int age;	
 	

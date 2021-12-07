@@ -1,8 +1,7 @@
 package gui;
 
 import java.awt.Color;
-import java.awt.event.ActionEvent;
-import java.awt.event.ActionListener;
+
 import javax.swing.JButton;
 import javax.swing.JToolBar;
 
@@ -32,24 +31,9 @@ public class Toolbar extends JToolBar {
 		// JB + ctrl + space / red + ctrl + space
 		final JButton redButton = new JButton("RED");
 		final JButton blueButton = new JButton("BLUE");
-		
-		//컬러변경클래스를 하나로 만들기
-		/*
-		redButton.addActionListener(new ActionListener() {
-			public void actionPerformed(ActionEvent e) {
-				mainPanel.setBackground(Color.RED);
-			}
-		});
-		
-		blueButton.addActionListener(new ActionListener() {
-			public void actionPerformed(ActionEvent e) {
-				mainPanel.setBackground(Color.BLUE);
-			}
-		});
-		*/
+
 		//람다식으로 변경
-		redButton.addActionListener(e -> mainPanel.setBackground(Color.RED));
-		
+		redButton.addActionListener(e -> mainPanel.setBackground(Color.RED));	
 		blueButton.addActionListener(e -> mainPanel.setBackground(Color.BLUE));
 		
 		// 툴바에 버튼 붙이기

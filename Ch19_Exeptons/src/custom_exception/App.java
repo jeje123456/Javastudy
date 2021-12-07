@@ -1,7 +1,7 @@
 package custom_exception;
 
-import custom_exception.exceptions.TempOutOfRangeException;
 import custom_exception.exceptions.TempTooHighException;
+import custom_exception.exceptions.TempTooLowException;
 
 public class App {
 
@@ -27,7 +27,7 @@ public class App {
 			//온도가 높을 때
 			System.out.println(e.getMessage());
 			
-		} catch (TempOutOfRangeException e) {
+		} catch (TempTooLowException e) {
 			//온도가 낮을 때
 			System.out.println(e.getMessage());
 			

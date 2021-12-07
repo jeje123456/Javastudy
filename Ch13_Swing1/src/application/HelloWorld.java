@@ -22,11 +22,11 @@ public class HelloWorld {
 */
 		// SwingUtilities + ctrl + Enter
 		SwingUtilities.invokeLater(() -> {
+			new MainFrame("테스트 스윙 앱");
 /*			JFrame mainFrame = new JFrame();	
 			mainFrame.setSize(600,400);
 			mainFrame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 			mainFrame.setVisible(true); */
-			new MainFrame("테스트 스윙 앱");
 		}); 
 	}
 }

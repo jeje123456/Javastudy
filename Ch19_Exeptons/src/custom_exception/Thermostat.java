@@ -1,13 +1,12 @@
 package custom_exception;
 
-import custom_exception.exceptions.TempOutOfRangeException;
 import custom_exception.exceptions.TempTooHighException;
 import custom_exception.exceptions.TempTooLowException;
 
 public class Thermostat {
 	
 	//예외처리 throws는 해당 예외처리를 이 메소드를 호출할 때 처리하도록 함
-	public void setTemperature(double temperature) throws TempOutOfRangeException {
+	public void setTemperature(double temperature) throws TempTooLowException, TempTooHighException {
 		
 		setMachinTemperature(temperature);
 		//오류눌러서 메소드문 작성
@@ -15,7 +14,7 @@ public class Thermostat {
 		System.out.println("온도세팅 : " + temperature);
 	}
 
-	private void setMachinTemperature(double temperature) throws TempOutOfRangeException {
+	private void setMachinTemperature(double temperature) throws TempTooLowException, TempTooHighException  {
 /*		if(temperature < 0 || temperature > 35) {
 			throw new TempOutOfRangeException("온도가 비정상 입니다.");
 			//Exception을 TempOutOfRangeException으로 바꾸고

@@ -1,7 +1,6 @@
 package innerClasses;
 
-public class App implements Runnable {
-	
+public class App implements Runnable {	
 	private String name = "미키마우스";
 
 	public static void main(String[] args) {
@@ -34,7 +33,5 @@ public class App implements Runnable {
 	@Override
 	public void run() {
 		System.out.println(name);
-		
 	}
-	
 }
