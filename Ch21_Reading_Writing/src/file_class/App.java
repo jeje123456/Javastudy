@@ -15,7 +15,6 @@ public class App {
 		
 		// 텍스트 쓰기 : text.txt에 위릐 text내용을 적기
 		// Files+c+s -> import //.wr -> write선택 // (path, null, null)의 널값 입력
-		// throws IOException 생김 언제???? 한번해봐
 		// Files클래스의 스테틱 메소드 write로 (적을파일의 경로, 적을내용(byte단위 : 0과 1))
 		// 컴퓨터는 문자열을 읽을 수 없기때문에 byte단위로 변환
 		 Files.write(path, text.getBytes()); // 파일이 없을경우 만들어줌
