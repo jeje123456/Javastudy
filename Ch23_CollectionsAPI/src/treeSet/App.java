@@ -13,9 +13,9 @@ class Person implements Comparable<Person> {
 	}
 	@Override
 	public int compareTo(Person o) {
-	// 이름을 문자열로 비교(이미 문자열에 비교메서드 compareTo가 구현되어 있음)
-		return name.compareTo(o.name);
+		return name.compareTo(name);
 	}
+
 }
 
 public class App {
@@ -35,16 +35,5 @@ public class App {
 		// class Person implements Comparable<Person>로 수정
 		// compareTo 메소드 작성 -> 이름으로 비교 -> Exception 안생김
 		
-		
-		TreeSet<Integer> list = new TreeSet<>();
-		list.add(10);
-		list.add(7);
-		list.add(1);
-		list.add(8);
-		list.add(9);
-		
-		for(int i : list) {
-			System.out.println(i);
-		}
 	}
 }

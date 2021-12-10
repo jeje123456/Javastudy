@@ -41,9 +41,6 @@ public class App {
 			System.out.println(i);
 		}
 		System.out.println();
-		
-		
-		
 	}
 
 }

@@ -13,17 +13,7 @@ class Person{
 		return name;
 	}
 	// 우클릭 - 소스 - generate hashCode() and equals()클릭
-	@Override
-	public boolean equals(Object obj) { // Object는 비교할 다른 객체
-		if(this == obj) // 객체가 같을 경우
-			return true; 
-		if(obj == null) // 비교대상이 null값이면
-			return false;
-		if(getClass() != obj.getClass()) // 클래스 타입이 다를경우 false 
-			return false;
-		Person other = (Person)obj;
-		return Objects.equals(name, other.name);// 위의 3가지 경우가 아닐 경우에 이름으로 
-	}
+
 }
 
 public class App {

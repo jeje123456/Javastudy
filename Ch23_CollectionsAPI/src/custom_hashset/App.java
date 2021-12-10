@@ -16,8 +16,7 @@ class Creature {
 	@Override
 	public int hashCode() {
 		return Objects.hash(id);
-	}
-	
+	}	
 	// id 값으로만 equals 메소드 생성
 	// id가 중복되면 값이 입력안됨
 	// id기준으로 보기 때문에 0번에 고양이가 있는 객체가 있으므로 true

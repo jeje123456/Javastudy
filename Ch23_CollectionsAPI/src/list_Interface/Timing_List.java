@@ -10,9 +10,9 @@ public class Timing_List {
 		List<Integer> arrayList = new ArrayList<>();
 		List<Integer> linkedList = new LinkedList<>();
 		
-		long duration1 = timeOPerations(arrayList);
+		long duration1 = timeOperations(arrayList);
 		System.out.println("측정시간 : " + duration1); // 0.004초, 0.035초
-		long duration2 = timeOPerations(linkedList);
+		long duration2 = timeOperations(linkedList);
 		System.out.println("측정시간 : " + duration2); // 0.017초, 0.006초
 		// 일반적인 순서대로 입력은 Array리스트가 더 빠름
 		// 특정 인덱스 번호에 입력이나 제거는 Linked리스트가 더 빠름
@@ -29,7 +29,7 @@ public class Timing_List {
 */
 	}
 	
-	public static long timeOPerations(List<Integer> list) {
+	public static long timeOperations(List<Integer> list) {
 		long start = System.currentTimeMillis(); // 시간측정
 /*		for(int i=0; i < 10000; i++) {
 			list.add(i); // 0부터 10000-1까지 리스트에 하나씩 입력
