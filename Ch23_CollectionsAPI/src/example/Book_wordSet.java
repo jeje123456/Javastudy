@@ -24,10 +24,33 @@ public class Book_wordSet {
 		
 		System.out.println(AliceList.size());
 		System.out.println(bookList.size());
-		// 출력
+/*		// 출력
 		for(String w : AliceList) {
 			System.out.println(w);
 		}
+*/	
+		displayWords(AliceList);
+	}
+	/**
+	 * list를 입력받아서 그 안에 단어들을 출력한다.
+	 * @param List
+	 */
+	private static void displayWords(TreeSet<String> list) {
+		int count = 0;
+		for(String w : list) {
+			// 한행에 단어를 6개씩 출력하고싶다.
+			// -> 6개 작성하고 println으로 줄바꾸기
+			System.out.printf("%-10s \t", w); 
+			// 단어길이마다 다르니까 %와s사이에 숫자를 넣으면 
+			// 그 숫자만큼 단어를 입력할 간격을 벌림(앞줄정렬하려면 -10입력)
+			// 간격 \t = tab만큼 뜸
+			// 줄바꿈 없이 철자 10개가 입력될 공간을 두고 탭만큼 띄운다.
+			count++;
+			if(count == 6) {
+				System.out.println();// 한줄 띄우기
+				count = 0;
+			}
+		}	
 	}
 	/**
 	 * 입력된 파일을 읽어서 단어를 저장하고 마지막에 TreeSet 리스트로 리턴
@@ -44,7 +67,10 @@ public class Book_wordSet {
 				//트리셋에 단어로 분리해서 입력한다.(자동정렬 및 중복제거)
 				String[] words = line.split("[^a-zA-Z]+");
 				for (String w : words) {
-					if(w.length() < 6) {
+					if(w.length() > 10) {
+						continue;
+					}
+					if(w.length() < 3) {
 						continue;
 					}
 					wordSet.add(w.toLowerCase());//소문자로 단어 입력

@@ -37,7 +37,7 @@ public class App2 {
 			String input = scanner.nextLine();
 			input = input.replace(" ", "");
 
-			if(input.equalsIgnoreCase("주문완료")) {
+			if(input.equals("주문완료")) {
 				System.out.println("주문종료");
 				//결과출력
 				for (Chicken1 orders : order) {
