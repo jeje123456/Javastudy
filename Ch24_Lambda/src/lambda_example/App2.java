@@ -7,13 +7,14 @@ interface Runner{
 
 public class App2 {
 	public static void main(String[] args) {
+//		Runner run = new Runner(){익명클래스};
 //		Runner run = (매개변수) -> {실행식};
 //		Runner run = () -> {
 //			System.out.println("헬로우");
 //			System.out.println("람다식");
 //		};
 		// 코드가 한줄일때는 코드블록{} 생략가능
-		Runner run = () -> System.out.println("한줄");
+		Runner run = () -> System.out.println("한줄"); //객체생
 		run.execute();
 		
 		System.out.println(run instanceof Runner);

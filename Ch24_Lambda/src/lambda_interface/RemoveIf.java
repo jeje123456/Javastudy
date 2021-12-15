@@ -2,6 +2,7 @@ package lambda_interface;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.function.Predicate;
 
 public class RemoveIf {
 
@@ -18,7 +19,12 @@ public class RemoveIf {
 		
 		// 리스트 넘버즈 안에 있는 정수들 중에 6보다 작으면 다 제거
 		// removeIf 메소드는 predicate로 검사(test)해서 참이면 다 제거한다.
-//		numbers.removeIf(null);
+		numbers.removeIf(new Predicate<Integer>() {
+			@Override
+			public boolean test(Integer i) {
+				return i < 6; // 정수가 6보다 작으면 참이다.
+			}
+		});
 		// 람다식
 		numbers.removeIf(i -> i < 6);
 		

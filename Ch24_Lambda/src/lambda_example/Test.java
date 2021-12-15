@@ -1,7 +1,7 @@
 package lambda_example;
 // 폴더에 i표시는 interface의 약자
 // 람다식을 쓰려면 functional interface이어야 한다.
-//@ + F + c+ s -> 에러발생 -> functional interface
+//@ + F + c+ s -> functional interface -> 에러발생
 // -> 추상메소드 생성
 @FunctionalInterface
 public interface Test {
