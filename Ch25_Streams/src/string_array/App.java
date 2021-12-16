@@ -11,14 +11,6 @@ public class App {
 		// 1. Stream.of(1,2,3) 정수형 스트림 
 		//	  Stream.of('하나','둘') 문자열 스트림
 		// 2. 배열일 경우 Array.stream(배열입력)
-				//	3번	 	  2번    	1번
-		Stream.of("Hello","bottle","Africa")
-			.sorted()	 // 정렬 : 알파벳순
-			.findFirst() // 첫번째
-			.ifPresent(x -> System.out.println(x));
-		// 1개라서 forEach문 안됨		
-		System.out.println();
-		
 		String[] items = {"고양이","호랑이","고라니","치타","치약","치과"};
 		Stream.of(items) // 배열을 입력해서 스트림 생성
 			.filter(s -> s.startsWith("치")) // 필터는 참 값만 남긴다.
